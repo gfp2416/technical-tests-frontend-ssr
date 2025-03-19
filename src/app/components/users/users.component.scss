@@ -1,0 +1,79 @@
+$primary-color: #007bff;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$help-color: #17a2b8;
+
+h1 {
+  text-align: center;
+  color: $primary-color;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+p-button {
+  display: inline-block;
+}
+
+div {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-container{
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+p-table {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  th {
+    background: $primary-color;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+  }
+}
+
+p-button[severity='success'],
+p-button[severity='danger'],
+p-button[severity='help'] {
+  border-radius: 20px;
+}
